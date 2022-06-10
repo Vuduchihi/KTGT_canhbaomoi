@@ -4,11 +4,6 @@ FILE my-script.sh
 ≡≡≡≡below≡≡≡≡≡
 
 #!/bin/bash
-#echo "Enter the full path to the file."
-#read file
-#filesize=$(ls -lh $file | awk '{print  $5}')
-#echo "$file has a size of $filesize"
-
 export file_username="/home/kali/nefias/results"
 filesize_old=$(ls -lh $file_username | awk '{print  $5}')
 filesize_new=$filesize_old
