@@ -1,3 +1,4 @@
+import sys
 import requests #gửi request http tới telegram app
 from datetime import datetime
 import pytz #mui giờ
@@ -21,4 +22,9 @@ def send_msg_on_telegram(message):
     else:
         print("ERROR: Could not send Message")
 
+content = sys.argv[1] # đầu vào sẽ là nội dung của folder results
+
+msg = f"{msg}\nNoidung:{content}"
+
 send_msg_on_telegram(msg)
+
